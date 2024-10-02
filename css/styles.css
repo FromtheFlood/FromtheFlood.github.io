@@ -10,3 +10,11 @@ main {
     font-size: large;
 }
 
+p {
+    color:rgb(94, 11, 239);
+}
+
+#red {
+    color: red;
+}
+
