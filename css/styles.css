@@ -18,3 +18,12 @@ p {
     color: red;
 }
 
+h3 {
+    display: none;
+    background-color: yellow;
+    width: fit-content;
+}
+
+hover h3 {
+    display: block;
+}
