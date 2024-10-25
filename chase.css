@@ -1,0 +1,148 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav-bar {
+    display: flex;
+    flex: auto;
+}
+
+.nav-bar:hover {
+    background-color: lightgray;
+}
+
+.nav-bar:active {
+    background-color: aqua;
+}
+
+nav .nav-bar {
+    border: 1px solid black;
+}
+
+#bar {
+    padding: 20px;
+    font-size: larger;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    position: sticky;
+    top: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    float: left;
+}
+
+.nav-item:hover {
+    background-color: lightgrey;
+}
+
+.nav-item:active {
+    background-color: aqua;
+}
+
+nav .nav-item {
+    border: 1px solid black;
+    width: 200px;
+}
+
+.nav-item {
+    display: flex;
+    flex: auto;
+}
+
+a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 80px;
+}
+
+h2 {
+    text-align: center;
+}
+
+article {
+    padding: 70px;
+    font-size: larger;
+    margin-left: 200px;
+}
+
+#mic-pic {
+    display: block;
+    width: 400px;
+    height: auto;
+    rotate: 90deg;
+    margin: auto;
+}
+
+@media screen and (width <= 960px) {
+    img {
+        width: 100px;
+    }
+}
+
+.drop-box {
+    border: 1px solid slategray;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    width: 150px;
+    justify-content: space-evenly;
+}
+
+.drop-box:hover {
+    background-color: lightgray;
+}
+
+.summary {
+    padding: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    table-layout: fixed;
+    caption-side: top;
+    margin-left: 270px;
+}
+
+caption {
+    text-align: left;
+    font-size: larger;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+#author {
+    display: block;
+    height: auto;
+    width: 25%;
+    margin: auto;
+}
+
+section {
+    text-align: center;
+    font-size: smaller;
+    color: lightgray;
+}

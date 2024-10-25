@@ -1,0 +1,45 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 35px;
+}
+
+.new-page {
+    display: flex;
+    flex: auto;
+}
+
+nav .new-page {
+    border: 1px solid black;
+}
+
+.new-page:hover {
+    background-color: lightgray;
+}
+
+a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    padding: 70px;
+    font-size: larger;
+}
+
+footer {
+    text-align: center;
+    font-size: smaller;
+    color: lightgrey;
+}
