@@ -4,7 +4,7 @@ body {
         #228b2280 25%,
         #7cfc0080 35%,
         #7cfc0080 65%,
-        #228b2280 75%,
+        #228b2280 75%
     );
 }
 
@@ -16,7 +16,7 @@ body {
     justify-content: space-evenly;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: darkgreen;
     z-index: 1;
 }
 
