@@ -161,8 +161,9 @@ th, td {
     margin: auto;
 }
 
-section {
+footer {
     text-align: center;
-    font-size: smaller;
-    color: lightgray;
+    font-size: medium;
+    font-style: italic;
+    color: black;
 }

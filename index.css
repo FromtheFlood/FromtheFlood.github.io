@@ -13,9 +13,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 35px;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    background-color: lightgreen;
+    z-index: 1;
 }
 
 .new-page {
@@ -50,6 +52,7 @@ section {
 
 footer {
     text-align: center;
-    font-size: smaller;
-    color: lightgrey;
+    font-size: medium;
+    font-style: italic;
+    color: black;
 }
