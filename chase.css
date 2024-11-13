@@ -1,3 +1,13 @@
+body {
+    background: linear-gradient(
+        to right, 
+        #228b2280 25%,
+        #7cfc0080 35%,
+        #7cfc0080 65%,
+        #228b2280 75%,
+    );
+}
+
 .top-bar {
     display: flex;
     flex-direction: row;
@@ -27,7 +37,17 @@ nav .nav-bar {
     border: 1px solid black;
 }
 
-#bar {
+#bar1 {
+    padding: 20px;
+    font-size: larger;
+}
+
+#bar2 {
+    padding: 20px;
+    font-size: larger;
+}
+
+#bar3 {
     padding: 20px;
     font-size: larger;
 }

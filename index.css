@@ -1,3 +1,13 @@
+body {
+    background: linear-gradient(
+        to right, 
+        #228b2280 25%,
+        #7cfc0080 35%,
+        #7cfc0080 65%,
+        #228b2280 75%,
+    );
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
