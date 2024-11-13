@@ -16,7 +16,7 @@ body {
     justify-content: space-evenly;
     position: sticky;
     top: 0;
-    background-color: darkgreen;
+    background-color: lightgreen;
     z-index: 1;
 }
 
