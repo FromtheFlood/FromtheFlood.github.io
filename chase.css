@@ -52,6 +52,12 @@ nav .nav-bar {
     font-size: larger;
 }
 
+#mics {
+    padding: 20px;
+    font-size: larger;
+    background-color: aqua;
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
