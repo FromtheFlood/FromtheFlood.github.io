@@ -66,12 +66,30 @@ nav .nav-bar {
         caption-side: top;
         margin: auto;
     }
+
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
 }
 
 @media screen and (width > 720px) {
 
-    article {margin-left: 200px;}
-    table {margin-left: 270px;}
+    article {
+        margin-left: 200px;
+    }
+    
+    table {
+        margin-left: 270px;
+    }
+    
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        
+    }
 
 }
 
@@ -100,7 +118,6 @@ nav .nav-bar {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: left;
     position: sticky;
     top: 40px;
     padding-bottom: 30px;
@@ -150,8 +167,8 @@ article {
 #mic-pic {
     display: block;
     width: 50%;
+    transform: rotate(90deg);
     height: auto;
-    rotate: 90deg;
     margin: auto;
 }
 
@@ -193,8 +210,9 @@ th, td {
 #author {
     display: block;
     height: auto;
-    width: 25%;
+    width: 40%;
     margin: auto;
+    float: inline-start;
 }
 
 footer {
@@ -202,4 +220,13 @@ footer {
     font-size: medium;
     font-style: italic;
     color: black;
+}
+
+#about {
+    column-count: 3;
+    column-gap: 30px;
+}
+
+#aboutHeading {
+    column-span: all;
 }
