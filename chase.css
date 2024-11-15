@@ -37,6 +37,44 @@ nav .nav-bar {
     border: 1px solid black;
 }
 
+@media screen and (width <= 720px) {
+    
+    .flex-container {
+        display: none;
+        float: none;
+    }
+
+    .flex-container .nav-item {
+        display: none;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    article {
+        display: grid; 
+        font-size: large;
+        margin: auto;
+    }
+
+    table {
+        display: grid;
+        border-collapse: collapse;
+        width: 75%;
+        table-layout: fixed;
+        caption-side: top;
+        margin: auto;
+    }
+}
+
+@media screen and (width > 720px) {
+
+    article {margin-left: 200px;}
+    table {margin-left: 270px;}
+
+}
+
 #bar1 {
     padding: 20px;
     font-size: larger;
@@ -107,21 +145,14 @@ h2 {
 article {
     padding: 70px;
     font-size: larger;
-    margin-left: 200px;
 }
 
 #mic-pic {
     display: block;
-    width: 400px;
+    width: 50%;
     height: auto;
     rotate: 90deg;
     margin: auto;
-}
-
-@media screen and (width <= 960px) {
-    img {
-        width: 100px;
-    }
 }
 
 .drop-box {
@@ -146,7 +177,6 @@ table {
     width: 75%;
     table-layout: fixed;
     caption-side: top;
-    margin-left: 270px;
 }
 
 caption {
