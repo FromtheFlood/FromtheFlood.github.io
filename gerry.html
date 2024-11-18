@@ -8,50 +8,87 @@
     </head>
 
     <body>
-        <!-- Links to the home page and group members pages -->
+        <nav class="top-bar">
+            <!--link to the home page-->
+            <div class="nav-bar"><a id="bar_index" href="./index.html">Home</a></div>
+            <!--link to Logan's page-->
+            <div class="nav-bar">
+                <a id="bar_logan" href="./logan.html">Food Reviews</a>
+            </div>
+            <div class="nav-bar"><a id="birds">Parrots</a></div>
+            <!--link to Chase's page-->
+            <div class="nav-bar">
+                <a id="bar_chase" href="./chase.html">Microphones</a>
+            </div>
+        </nav>
+
         <header>
-            <div class="nav-bar">
-                <a id="bar" href="index.html">Home</a>
-            </div>
-            <div class="nav-bar">
-                <a id="bar" href="chase.html">Chase</a>
-            </div>
-            <div class="nav-bar">
-                <a id="bar" href="logan.html">Logan</a>
-            </div>
+            <!--ID "top" allows for quick access to the top of the page-->
+            <!--h1 used as this is title of the entire page-->
+            <h1 id="top">A Parrot Comparison</h1>
         </header>
 
         <!-- Container to display as a grid in three columns -->
+        <!-- <h1>A Parrot Comparison</h1> -->
+
+        <!-- Navigation links to sections of the page -->
+        <!-- Placed in the first column -->
         <div class="container">
-            <h1>A Parrot Comparison</h1>
+            <aside class="flex-container">
+                <h3>Quick Links</h3>
+                <div class="jump-to-alt">
+                    <a href="#macaw1"><b>Macaw</b></a>
+                </div>
+                <div class="jump-to">
+                    <a href="#macaw2">Physical Appearance and Size</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#macaw3">Diet and Feeding Habits</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#macaw4">Social Behavior and Intelligence</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#macaw5">Macaws as Pets</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#macaw6">Special Traits</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#macaw7">Conclusion</a>
+                </div>
+                <div class="jump-to" id="empty">
+                    <!-- Empty div to create a separation -->
+                </div>
 
-            <!-- Navigation links to sections of the page -->
-             <!-- Placed in the first column -->
-            <div class="left">
-                <nav class="sidenav-macaw">
-                    <a class="jump-to" href="#macaw1"><b>Macaw</b></a>
-                    <a class="jump-to" href="#macaw2">Physical Appearance and Size</a>
-                    <a class="jump-to" href="#macaw3">Diet and Feeding Habits</a>
-                    <a class="jump-to" href="#macaw4">Social Behavior and Intelligence</a>
-                    <a class="jump-to" href="#macaw5">Macaws as Pets</a>
-                    <a class="jump-to" href="#macaw6">Special Traits</a>
-                    <a class="jump-to" href="#macaw7">Conclusion</a>
-                </nav>
+                <div class="jump-to">
+                    <a href="#cockatoo1"><b>Cockatoo</b></a>
+                </div>
+                <div class="jump-to">
+                    <a href="#cockatoo2">Physical Appearance and Size</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#cockatoo3">Diet and Feeding Habits</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#cockatoo4">Social Behavior and Intelligence</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#cockatoo5">Cockatoos as Pets</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#cockatoo6">Lifespan and Commitment</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#cockatoo7">Special Traits</a>
+                </div>
+                <div class="jump-to">
+                    <a href="#cockatoo8">Conclusion</a>
+                </div>
+            </aside>
 
-                <nav class="sidenav-cockatoo">
-                    <a class="jump-to" href="#cockatoo1"><b>Cockatoo</b></a>
-                    <a class="jump-to" href="#cockatoo2">Physical Appearance and Size</a>
-                    <a class="jump-to" href="#cockatoo3">Diet and Feeding Habits</a>
-                    <a class="jump-to" href="#cockatoo4">Social Behavior and Intelligence</a>
-                    <a class="jump-to" href="#cockatoo5">Cockatoos as Pets</a>
-                    <a class="jump-to" href="#cockatoo6">Lifespan and Commitment</a>
-                    <a class="jump-to" href="#cockatoo7">Special Traits</a>
-                    <a class="jump-to" href="#cockatoo8">Conclusion</a>
-                </nav>
-            </div>
-
-            <!-- Placed in the 2nd column to be centered on page -->
-            <div class="center">
+            <!-- Main to be centered on page -->
+            <main>
                 <section id="macaw1">
                     <h2>The Macaw Parrot</h2>
                     <p>
@@ -121,6 +158,11 @@
                         regular social interaction, and plenty of space to
                         explore.
                     </p>
+                </section>
+
+                <section id="float_img">
+                    <h6>Macaw Parrot</h6>
+                    <img src="assets/macaw_02.jpg" alt="macaw picture" />
                 </section>
 
                 <section id="macaw5">
@@ -357,82 +399,99 @@
                 </section>
 
                 <!-- Table comparison of the content -->
-                <table>
-                    <tr>
-                        <th>Trait</th>
-                        <th>Macaw Parrot</th>
-                        <th>Cockatoo Parrot</th>
-                    </tr>
-                    <tr>
-                        <th>Size</th>
-                        <td>30" to 40" with tail</td>
-                        <td>12" to 24" with tail</td>
-                    </tr>
-                    <tr>
-                        <th>Weight</th>
-                        <td>2 - 4 lbs</td>
-                        <td>1 - 2.5 lbs</td>
-                    </tr>
-                    <tr>
-                        <th>Wingspan</th>
-                        <td>Up to 4 feet</td>
-                        <td>2 to 3 feet</td>
-                    </tr>
-                    <tr>
-                        <th>Plumage</th>
-                        <td>Blue, yellow, red, green</td>
-                        <td>White, black gray, pink</td>
-                    </tr>
-                    <tr>
-                        <th>Lifespan</th>
-                        <td>30 - 50 years</td>
-                        <td>40 - 70 years</td>
-                    </tr>
-                    <tr>
-                        <th>Vocal Ability</th>
-                        <td>Excellent mimics of human speech and sounds</td>
-                        <td>Can mimic sounds, less likely to mimic speech</td>
-                    </tr>
-                    <tr>
-                        <th>As a Pet</th>
-                        <td>
-                            Demanding, needs time and care, long-term commitment
-                        </td>
-                        <td>
-                            Affectionate but demanding, not for casual owners
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                <section id="table">
+                    <h4>Comparison</h4>
+                    <table>
+                        <tr>
+                            <th>Trait</th>
+                            <th>Macaw Parrot</th>
+                            <th>Cockatoo Parrot</th>
+                        </tr>
+                        <tr>
+                            <th>Size</th>
+                            <td>30" to 40" with tail</td>
+                            <td>12" to 24" with tail</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>2 - 4 lbs</td>
+                            <td>1 - 2.5 lbs</td>
+                        </tr>
+                        <tr>
+                            <th>Wingspan</th>
+                            <td>Up to 4 feet</td>
+                            <td>2 to 3 feet</td>
+                        </tr>
+                        <tr>
+                            <th>Plumage</th>
+                            <td>Blue, yellow, red, green</td>
+                            <td>White, black gray, pink</td>
+                        </tr>
+                        <tr>
+                            <th>Lifespan</th>
+                            <td>30 - 50 years</td>
+                            <td>40 - 70 years</td>
+                        </tr>
+                        <tr>
+                            <th>Vocal Ability</th>
+                            <td>Excellent mimics of human speech and sounds</td>
+                            <td>
+                                Can mimic sounds, less likely to mimic speech
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>As a Pet</th>
+                            <td>
+                                Demanding, needs time and care, long-term
+                                commitment
+                            </td>
+                            <td>
+                                Affectionate but demanding, not for casual
+                                owners
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </main>
 
             <!-- To be placed in the 3rd column -->
-             <!-- Figures and captions to link the images to original sources -->
+            <!-- Figures and captions to link the images to original sources -->
             <div class="right">
                 <figure>
                     <img
                         id="macaw"
-                        src="./assets/macaw_01.jpg"
+                        src="assets/macaw_01.jpg"
                         alt="macaw parrot"
                     />
-                    <figcaption>
-                        Image Link: <a href="https://en.wikipedia.org/wiki/File:Blue-and-Yellow-Macaw.jpg">Blue and Yellow Macaw</a>
+                    <figcaption id="link">
+                        Image Link:<a
+                            href="https://en.wikipedia.org/wiki/File:Blue-and-Yellow-Macaw.jpg"
+                            >Blue and Yellow Macaw</a
+                        >
                     </figcaption>
                 </figure>
                 <br />
                 <figure>
-                                    <img
-                    id="cockatoo"
-                    src="./assets/cockatoo_01.jpg"
-                    alt="cockatoo"
-                />
-                <figcaption>
-                    Image Link: <a href="https://media.australian.museum/media/dd/images/sulphur-crested_cockatoo.81ff5dc.width-1200.1e450b9.jpg">Cockatoo</a>
-                </figcaption>
+                    <img
+                        id="cockatoo"
+                        src="assets/cockatoo_01.jpg"
+                        alt="cockatoo picture"
+                    />
+                    <figcaption id="link_2">
+                        Image Link:<a
+                            href="https://media.australian.museum/media/dd/images/sulphur-crested_cockatoo.81ff5dc.width-1200.1e450b9.jpg"
+                            >Cockatoo</a
+                        >
+                    </figcaption>
                 </figure>
             </div>
         </div>
         <footer>
-            <p>Gerry Plouffe &copy; 2024</p>
+            <p id="footer">
+                All content found within this website has been made expressly
+                for the purpose of getting good marks in class. It was also
+                pretty fun to make.
+            </p>
         </footer>
     </body>
 </html>
