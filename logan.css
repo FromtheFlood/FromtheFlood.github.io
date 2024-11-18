@@ -1,13 +1,11 @@
-.flex-bar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1;
+body {
+    background: linear-gradient(
+        to right,
+        #228b2280 25%,
+        #7cfc0080 35%,
+        #7cfc0080 65%,
+        #228b2280 75%
+    );
 }
 
 .nav-bars {
@@ -19,6 +17,56 @@
 .nav-bars:hover {
     background-color: lightgray;
 }
+
+/* top bar css */
+.flex-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    background-color: lightgreen;
+    z-index: 1;
+}
+
+#top-bar{
+    font-size: larger;
+    padding: 20px;
+}
+/* aside css */
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+}
+
+.aside-container {
+    grid-column: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    position: fixed;
+    padding-top: 100px;
+    
+}
+.aside-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 200px;
+}
+
+.aside-bar:hover {
+    background-color: lightgray;
+}
+
+
 
 a {
     display: block;
@@ -36,6 +84,10 @@ hgroup p {
     font-weight: bold;
 }
 /* text alignment for styling */
+
+main {
+    grid-column: 2;
+}
 h3 {
     text-align: center;
 }
@@ -54,8 +106,28 @@ table, table * {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
-    }
+}
 
 td {
     width: 30%;
+}
+
+#footer{
+    margin-top: 80px;
+    display: block;
+}
+
+footer {
+text-align: center;
+font-size: medium;
+font-style: italic;
+color: black;
+}
+@media screen and (max-width:960px) {
+    aside{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 0% 100%;
+    }
 }
