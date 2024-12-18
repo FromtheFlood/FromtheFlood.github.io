@@ -1,0 +1,112 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav .nav-bar {
+    border: 1px solid black;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-bar {
+    display: flex;
+    flex: auto;
+}
+
+#home {
+    padding: 20px;
+    font-size: larger;
+    background-color: white;
+    color: black;
+}
+
+#max {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B0000;
+    color: white;
+}
+
+#mona {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B008B;
+    color: black;
+}
+
+#tenley {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B4513;
+    color: black;
+}
+
+a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+aside {
+    position: fixed;
+    z-index: 0;
+}
+
+.card {
+    box-shadow: 0 4px 6px;
+    background-color: #8B0000;
+}
+
+.card-img-top {
+    max-height: 200px;
+}
+
+.max-1 {
+    object-fit: fill;
+}
+
+.max-2 {
+    object-fit: cover;
+}
+
+.card-text {
+    color: white;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+article {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#maxwellCarousel {
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel-inner img {
+    max-width: 500px;
+    margin: auto;
+}
+
+footer {
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}

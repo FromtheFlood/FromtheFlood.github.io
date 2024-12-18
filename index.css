@@ -1,58 +1,98 @@
-body {
-    background: linear-gradient(
-        to right, 
-        #228b2280 25%,
-        #7cfc0080 35%,
-        #7cfc0080 65%,
-        #228b2280 75%
-    );
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-.flex-container {
+nav .nav-bar {
+    border: 1px solid black;
+}
+
+.top-bar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    position: sticky;
-    top: 0;
-    background-color: lightgreen;
-    z-index: 1;
 }
 
-.new-page {
+.nav-bar {
     display: flex;
     flex: auto;
 }
 
-nav .new-page {
-    border: 1px solid black;
+#home {
+    padding: 20px;
+    font-size: larger;
+    background-color: white;
+    color: black;
 }
 
-.new-page:hover {
-    background-color: lightgray;
+#max {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B0000;
+    color: white;
+}
+
+#mona {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B008B;
+    color: black;
+}
+
+#tenley {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B4513;
+    color: black;
 }
 
 a {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 20px;
-    font-size: large;
+    padding: 10px;
 }
 
-h1 {
+nav .container-fluid {
+    border: 1px solid black;
+}
+
+.nav-link {
+    display: flex;
+    flex: auto;
+    border: 1px solid black;
+}
+
+aside {
+    position: fixed;
+    z-index: 0;
+}
+
+h3 {
+    padding: 10px;
+}
+
+#catPoll {
+    padding: 10px;
+}
+
+main {
     text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
 }
 
-section {
-    padding: 70px;
-    font-size: larger;
+p {
+    padding: 5px;
 }
 
 footer {
-    text-align: center;
-    font-size: medium;
-    font-style: italic;
-    color: black;
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
 }

@@ -1,0 +1,114 @@
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+main {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    grid-column: 2;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav .nav-bar {
+    border: 1px solid black;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-bar {
+    display: flex;
+    flex: auto;
+}
+
+#carouselMona {
+    max-width: 500px;
+    margin: auto; 
+}
+
+#carouselMona .carousel-item img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+aside {
+    position: fixed;
+    z-index: 0;
+}
+
+.card {
+    box-shadow:  0 4px 6px;
+    background-color: #8B008B;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.card-img-custom {
+    width: 100%;
+    height: auto;
+    max-height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#home {
+    padding: 20px;
+    font-size: larger;
+    background-color: white;
+    color: black;
+}
+
+#max {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B0000;
+    color: white;
+}
+
+#mona {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B008B;
+    color: black;
+}
+
+#tenley {
+    padding: 20px;
+    font-size: larger;
+    background-color: #8B4513;
+    color: black;
+}
+
+a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+} 
